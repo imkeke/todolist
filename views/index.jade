@@ -15,12 +15,14 @@ block content
           th 操作
       tbody
         - for(var list in lists)
-          tr(data-id=lists[list].id)
-            td= lists[list].number
-            td= lists[list].name
+          tr(data-id=list)
+            td= list
+            td= lists[list]
             td
-              a.btn.btn-mini.btn-primary.h-del(href='javascript:;') 删除
+              a.btn.btn-mini.btn-primary.h-del(href='javascript:;') 已完成
 
 block script
     script(src='/lib/bootstrap/js/jquery.js')
     script(src='/javascripts/all.js')
+    - var html = "<script></script>"
+      | !{html}
