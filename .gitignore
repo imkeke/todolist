@@ -7,3 +7,4 @@ _notes
 *.psd
 *.unfinished
 node_modules
+*.db
